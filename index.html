@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="title">
+        <h1>Etch a Sketch</h1>
+        <iconify-icon icon="entypo:light-up" class="btn-darkLight"></iconify-icon>
+    </section>
+
+    <section class="content">
+        <div class="sideLeft">
+            <h2 class="color">
+                <span><input id="inputColor" type="color" value="#69a2a8"></span>
+                Choose a color 🎨
+            </h2>
+            <br> 
+            <h2 class="confGridSize"> 
+                <input id="inputRange" type="range" min="1" max="100" value="16">
+            </h2>
+            <button class="btn-rainbow">
+                <h4>RainBow</h4>
+                <iconify-icon icon="fluent-emoji:rainbow"></iconify-icon>
+            </button>
+            <button class="btn-darkening">
+                <h4>Darkening</h4>
+                <iconify-icon icon="mingcute:wet-fill"></iconify-icon>
+            </button>
+            <br>
+            <button class="btn-clear">
+                <h4>Clear</h4>
+                <iconify-icon icon="fluent-mdl2:clear-selection"></iconify-icon>
+            </button>
+            <button class="btn-eraser">
+                <h4>Eraser</h4>
+                <iconify-icon icon="icon-park-outline:clear-format"></iconify-icon>
+            </button>
+        </div>
+    
+        <div class="sideRight">
+            <div class="container"></div>
+        </div>
+    </section>
+    <footer>
+        <p>Limber Lazaro</p>
+        <a href="https://github.com/Kfassolb" target="_blank">
+            <iconify-icon icon="mdi:github"></iconify-icon>
+        </a>
+    </footer>
+    <script src="index.js"></script>
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

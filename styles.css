@@ -1,0 +1,438 @@
+body {
+    background-color: #0d1019d6;
+    color: #69a2a8;
+}
+.title {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.title>h1 {
+    font-size: xx-large;
+    font-family: cursive;
+    flex: auto;
+    text-align: center;
+}
+
+.title iconify-icon {
+    font-size: 2rem;
+    color:#fab96b;
+    margin: 3rem;
+    cursor: pointer;
+}
+
+h2 {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5rem 0 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.sideLeft {
+    margin-right: 3rem;
+}
+
+.color {
+    display: flex;
+    align-items: center;
+    font-family: cursive;
+}
+
+.sideRight {
+    margin-left: 3rem;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px 4px #1899d63b;   
+}
+
+input[type=color] {
+    width: 80px;
+    height: 80px; 
+    border-radius: 50%;
+    overflow: hidden; /*oculta cualquier contenido que se desborde*/
+    margin-right: 2rem;
+    border: none;
+    background-color: #69a2a8;
+}
+
+input[type=color]::-webkit-color-swatch { /*selecciona la muestra de color dentro del elemento*/
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {/*Selecciona el contenedor de la muestra*/
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+
+#inputColor:hover{
+    cursor: pointer;
+}
+
+.confGridSize {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+}
+
+#inputRange {
+    margin: 0 2rem 0 1rem;
+}
+
+.btn-clear {
+    margin-top: 0.5rem;
+    appearance: button;
+    background-color: #42686c;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.btn-clear::after{
+    background-clip: padding-box;
+    background-color: #69a2a8;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.btn-clear:main,
+.btn-clear:focus{
+    user-select: auto;
+}
+.btn-clear:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+.btn-clear:disabled {
+    cursor: auto;
+}
+.btn-clear:active {
+    border-width: 4px 0 0;
+    background: none;
+}
+
+.btn-rainbow {
+    appearance: button;
+    background-color: #8d5745;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.btn-rainbow::after{
+    background-clip: padding-box;
+    background-color: #f19474;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.btn-rainbow:main,
+.btn-rainbow:focus{
+    user-select: auto;
+}
+.btn-rainbow:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+.btn-rainbow:disabled {
+    cursor: auto;
+}
+.btn-rainbow:active {
+    border-width: 4px 0 0;
+    background: none;
+}
+
+.btn-eraser {
+    margin-top: 0.5rem;
+    appearance: button;
+    background-color: rgb(170 126 73);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.btn-eraser::after{
+    background-clip: padding-box;
+    background-color: #fab96b;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.btn-eraser:main,
+.btn-eraser:focus{
+    user-select: auto;
+}
+.btn-eraser:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+.btn-eraser:disabled {
+    cursor: auto;
+}
+.btn-eraser:active {
+    border-width: 4px 0 0;
+    background: none;
+}
+
+.btn-darkening {
+    appearance: button;
+    background-color: rgb(126 64 66);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.btn-darkening::after{
+    background-clip: padding-box;
+    background-color: #ea777b;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.btn-darkening:main,
+.btn-darkening:focus{
+    user-select: auto;
+}
+.btn-darkening:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+.btn-darkening:disabled {
+    cursor: auto;
+}
+.btn-darkening:active {
+    border-width: 4px 0 0;
+    background: none;
+}
+
+button {
+    width: 10rem;
+    height: 7rem;
+}
+
+footer{
+    margin-top: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    padding: 0.5rem;
+}
+footer a {
+    color: #ea777b;
+    height: 24px;
+    font-size: 1.5rem;
+}
+
+button iconify-icon { /*Todos los iconify-icon dentro de <button>*/
+    font-size: 4rem;
+}
+
+button>h4 { /*todos los h4 donde el padre es <button>*/
+    margin: 0;
+}
+
+.btn-darkening iconify-icon{
+    color: lightslategray;
+}
+
+@media (max-width: 1000px){
+    .sideLeft{
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+    .title iconify-icon {
+        margin: 0 3rem;
+    }
+    .sideRight {
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px){
+    button iconify-icon { /*Todos los iconify-icon dentro de <button>*/
+        font-size: 1.5rem;
+    }
+    button {
+        width: 10rem;
+        height: 4rem;
+    }
+    .container {
+        width: 450px;
+        height: 450px;;   
+    }
+    .sideRight {
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 300px;
+        height: 300px;
+    }
+    button h4{
+        display: none; /*oculta pero no borra, siguen existiendo en el DOM*/
+    }
+    button {
+        width: 5rem;
+        height: 5rem;
+    }
+    .sideLeft{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .color{
+        flex: 100%;
+    }
+    .confGridSize{
+        flex:100%;
+    }
+    .btn-clear{
+        flex: 50%;
+    }
+    .btn-darkening{
+        flex: 50%;
+    }
+    .btn-rainbow{
+        flex: 50%;
+    }
+    .btn-eraser{
+        flex: 50%;
+    }
+    .sideRight {
+        margin: 0;
+    }
+}
+@media (max-width: 400px){
+    .container {
+        width: 200px;
+        height: 200px;;   
+    }
+    .sideRight {
+        margin: 0;
+    }
+}
